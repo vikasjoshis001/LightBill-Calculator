@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1
+{
+postion;"absolute";
+left;"300px";
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Light Bill Form</h1>
+
+<div class="container">
+  <form action="Bill.php" method="post">
+    <label for="old_h1">Previous Month Unit of House 1</label>
+    <input type="text" id="old_h1" name="old_h1" placeholder=" Enter Old Unit of House 1">
+
+    <label for="old_h2">Previous Month Unit of House 2</label>
+    <input type="text" id="old_h2" name="old_h2" placeholder="Enter Old Unit of House 2">
+
+    <label for="old_h3">Previous Month Unit of House 3</label>
+    <input type="text" id="old_h3" name="old_h3" placeholder="Enter Old Unit of House 3"><hr/>
+    
+    <label for="new_h1">This Month Unit of House 1</label>
+    <input type="text" id="new_h1" name="new_h1" placeholder="Enter New Unit of House 1">
+    
+    <label for="new_h2">This Month Unit of House 2</label>
+    <input type="text" id="new_h2" name="new_h2" placeholder="Enter New Unit of House 2">
+    
+    <label for="new_h3">This Month Unit of House 3</label>
+    <input type="text" id="new_h3" name="new_h3" placeholder="Enter New Unit of House 3"><hr/>
+    
+    <label for="total_bill">Total Bill of This Month</label>
+    <input type="text" id="total_bill" name="total_bill" placeholder="Enter Total Bill">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
